@@ -4,7 +4,6 @@ from .models import TasksModel
 # Create your views here.
 def lista_tasksView(request):
     tasks = TasksModel.objects.all()
-    #print(tasks)
     return render(request, 'lista_tasks.html', {"tasks": tasks})
 
 
